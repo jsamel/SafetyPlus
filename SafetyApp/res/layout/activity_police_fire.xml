@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PoliceFireActivity" >
+
+    <TextView
+        android:id="@+id/policeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="@string/police"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="launchPoliceMaps"
+        android:background="@drawable/text" />
+
+    <TextView
+        android:id="@+id/policeInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="5dp"
+        android:text="@string/police"
+        android:clickable="true"
+        android:onClick="launchPoliceMaps"
+        android:background="@drawable/text" />
+
+    <Button
+        android:id="@+id/policeCallButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/btn"
+        android:onClick="callPolice"
+        android:text="@string/police_call" />
+
+    <TextView
+        android:id="@+id/fireText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/fire"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="launchFireMaps"
+        android:background="@drawable/text" />
+
+    <TextView
+        android:id="@+id/fireInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="5dp"
+        android:text="@string/fire"
+        android:clickable="true"
+        android:onClick="launchFireMaps"
+        android:background="@drawable/text" />
+
+    <Button
+        android:id="@+id/fireCallButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/btn"
+        android:onClick="callFire"
+        android:text="@string/fire_call" />
+
+</LinearLayout>

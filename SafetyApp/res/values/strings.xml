@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Safety+</string>
+    <string name="title">Safety Information</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Information Unavailable</string>
+    <string name="alerts">Weather Alerts:</string>
+    <string name="alert">In An Emergency, Call 911</string>
+    <string name="local_contacts">Local Emergency Contacts:</string>
+    <string name="police">Police Station:</string>
+    <string name="fire">Fire Station:</string>
+    <string name="hospital">Hospital:</string>
+    <string name="pharmacy">Pharmacy:</string>
+    <string name="dentist">Dentist:</string>
+    <string name="vet">Veterinary Care:</string>
+    <string name="cityHall">City Hall:</string>
+    <string name="courthouse">Courthouse:</string>
+    <string name="localGovtOffice">Local Government Office:</string>
+    <string name="locationText">blah</string>
+    <string name="policeFire">Police/Fire</string>
+    <string name="health">Health</string>
+    <string name="government">Government</string>
+    <string name="police_call">(###) ###-####</string>
+    <string name="fire_call">(###) ###-####</string>
+    <string name="hospital_call">(###) ###-####</string>
+    <string name="pharmacy_call">(###) ###-####</string>
+    <string name="dentist_call">(###) ###-####</string>
+    <string name="vet_call">(###) ###-####</string>
+    <string name="cityHall_call">(###) ###-####</string>
+    <string name="courthouse_call">(###) ###-####</string>
+    <string name="localGovtOffice_call">(###) ###-####</string>
+
+    <color name="blue">#66CCCC</color>
+    <color name="yellow">#FFFF00</color>
+
+    <string name="title_activity_police_fire">Police/Fire</string>
+    <string name="title_activity_health">Health</string>
+    <string name="title_activity_govt">Government</string>
+    <string name="title_activity_government">Government</string>
+    <string name="title_activity_launcher">Safety+</string>
+    <string name="names">Created by Joel and Morgan</string>
+    <string name="title_activity_alerts">Weather Alerts</string>
+
+</resources>

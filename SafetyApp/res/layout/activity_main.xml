@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/blue"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/safetyAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/weather"
+        android:clickable="true"
+        android:onClick="openAlertsActivity"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/safetyAlertMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/alerts"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/localContactsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/safetyAlerts"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/local_contacts"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/localContactsMessage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp" >
+
+        <TableRow
+            android:id="@+id/policeFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" >
+
+            <Button
+                android:id="@+id/policeFireButton"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn"
+                android:onClick="openPoliceFireActivity"
+                android:text="@string/policeFire" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" >
+
+            <Button
+                android:id="@+id/healthButton"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn"
+                android:onClick="openHealthActivity"
+                android:text="@string/health" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/government"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/governmentButton"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn"
+                android:onClick="openGovernmentActivity"
+                android:text="@string/government" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/alertBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="@string/alert"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+<!--
+         android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" 
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+-->
+
+
+<!--
+         <TextView
+        		android:id="@+id/policeText"
+       		 	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/police" />
+        		
+        		<TextView
+        		android:id="@+id/fireText"
+       		 	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/fire" />
+        		
+        		<TextView
+        		android:id="@+id/hospitalText"
+       		 	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/hospital" />
+-->

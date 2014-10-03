@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".HealthActivity" >
+
+        <TextView
+            android:id="@+id/hospitalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchHospitalMaps"
+            android:text="@string/hospital"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hospitalInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchHospitalMaps"
+            android:text="@string/hospital" />
+
+        <Button
+            android:id="@+id/hospitalCallButton"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn"
+            android:onClick="callHospital"
+            android:text="@string/hospital_call" />
+
+        <TextView
+            android:id="@+id/pharmacyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchPharmacyMaps"
+            android:paddingTop="20dp"
+            android:text="@string/pharmacy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pharmacyInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchPharmacyMaps"
+            android:paddingBottom="5dp"
+            android:text="@string/pharmacy" />
+
+        <Button
+            android:id="@+id/pharmacyCallButton"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn"
+            android:onClick="callPharmacy"
+            android:text="@string/pharmacy_call" />
+
+        <TextView
+            android:id="@+id/dentistText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchDentistMaps"
+            android:paddingTop="20dp"
+            android:text="@string/dentist"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dentistInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchDentistMaps"
+            android:paddingBottom="5dp"
+            android:text="@string/dentist" />
+
+        <Button
+            android:id="@+id/dentistCallButton"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn"
+            android:onClick="callDentist"
+            android:text="@string/dentist_call" />
+
+        <TextView
+            android:id="@+id/vetText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchVetMaps"
+            android:paddingTop="20dp"
+            android:text="@string/vet"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vetInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/text"
+            android:clickable="true"
+            android:onClick="launchVetMaps"
+            android:paddingBottom="5dp"
+            android:text="@string/vet" />
+
+        <Button
+            android:id="@+id/vetCallButton"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn"
+            android:onClick="callVet"
+            android:text="@string/vet_call" />
+    </LinearLayout>
+
+</ScrollView>
